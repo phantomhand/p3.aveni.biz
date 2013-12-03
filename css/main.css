@@ -1,0 +1,125 @@
+html {
+	background-color: #eee;
+	font-family: Helvetica, sans-serif;
+}
+
+#wrap {
+	text-align: center;
+	clear: both; 
+	margin: 0 auto; 
+	width: 700px;
+}
+
+#t-12 {
+	text-align: center;
+	clear: both; 
+	margin: 0 auto; 
+	width: 700px;
+	/* border: 2px solid red; */
+}	
+
+
+#play {
+	background-color: black;
+	width: 385px;
+	height: 580px;
+	margin: 25px 0 25px 0;
+	position: relative;
+	text-align: center;
+	clear: both; 
+	margin: 0 auto; 
+}
+
+/****************/
+/* PADS */
+/****************/
+
+.pads {
+	width: 100px;
+	height: 15px;
+	float: left;
+	cursor: pointer;
+	margin: 20px 0px 5px 20px;
+	padding-top: 95px;
+	font-family: Helvetica, sans-serif;
+	color: white;
+	font-size: medium;
+	text-align: right;
+	border: 1px solid transparent;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: url(../imgs/corner-tex.png) no-repeat;
+	opacity: 1;
+
+}
+
+#p1 {
+	background-color: purple;
+}
+
+#p2 {
+	background-color: darkorange;
+}
+
+#p3 {
+	background-color: deeppink;
+}
+
+#p4 {
+	background-color: seagreen;
+}
+
+#p5 {
+	background-color: blue;
+}
+
+#p6 {
+	background-color: skyblue;
+}
+
+#p7 {
+	background-color: yellow;
+}
+
+#p8 {
+	background-color: salmon;
+}
+
+#p9 {
+	background-color: lime;
+}
+
+#p10 {
+	background-color: red;
+}
+
+#p11 {
+	background-color: plum;
+}
+
+#p12 {
+	background-color: sienna;
+}
+
+.spacer {
+	clear: both;
+}
+
+p.game {
+	font-family: Helvetica, sans-serif;
+	color: white;
+	font-size: x-small;
+	text-align: left;
+	margin-top: 1px;
+}
+
+footer {
+	text-align: center;
+	clear: both; 
+	margin: 0 auto; 
+	width: 650px;
+	padding: 20px;
+	/* border: 2px solid red;  */
+	position: relative;
+}
+
