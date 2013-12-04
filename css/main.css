@@ -1,3 +1,7 @@
+/************/
+/* THE BASICS  */
+/************/
+
 html {
 	background-color: #eee;
 	font-family: Helvetica, sans-serif;
@@ -9,6 +13,23 @@ html {
 	margin: 0 auto; 
 	width: 700px;
 }
+
+h1 {
+	font-family: 'Play', sans-serif;
+	font-weight: 700;
+	font-size: xx-large;
+}
+
+body {
+	font-family: 'Play', sans-serif;
+	font-weight: 400;
+	font-size: large;
+}
+
+
+/****************/
+/* THE GAME */
+/****************/
 
 #t-12 {
 	text-align: center;
@@ -29,10 +50,6 @@ html {
 	clear: both; 
 	margin: 0 auto; 
 }
-
-/****************/
-/* PADS */
-/****************/
 
 .pads {
 	width: 100px;
@@ -101,10 +118,6 @@ html {
 	background-color: sienna;
 }
 
-.spacer {
-	clear: both;
-}
-
 p.game {
 	font-family: Helvetica, sans-serif;
 	color: white;
@@ -112,6 +125,11 @@ p.game {
 	text-align: left;
 	margin-top: 1px;
 }
+
+.spacer {
+	clear: both;
+}
+
 
 footer {
 	text-align: center;
