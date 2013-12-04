@@ -1,4 +1,4 @@
-function playExample() {
+function playSound() {
 	var Synth = function(audiolet, frequency) {
 		AudioletGroup.apply(this, [audiolet, 0, 1]);
 		this.sine = new Sine(this.audiolet, frequency);
@@ -30,5 +30,7 @@ var AudioletApp = function() {
 
 this.audioletApp = new AudioletApp();
 };
+
+
 
 
