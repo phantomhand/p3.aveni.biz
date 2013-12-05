@@ -1,5 +1,5 @@
-/************/
-/* THE BASICS  */
+/*************/
+/* BASICS  */
 /************/
 
 html {
@@ -28,7 +28,7 @@ body {
 
 
 /****************/
-/* THE GAME */
+/* GAME */
 /****************/
 
 #t-12 {
@@ -40,7 +40,7 @@ body {
 }	
 
 
-#play {
+#grid {
 	background-color: black;
 	width: 385px;
 	height: 580px;
@@ -49,9 +49,10 @@ body {
 	text-align: center;
 	clear: both; 
 	margin: 0 auto; 
+	padding-bottom: 10px;
 }
 
-.pads {
+.pad {
 	width: 100px;
 	height: 15px;
 	float: left;
@@ -125,6 +126,55 @@ p.game {
 	text-align: left;
 	margin-top: 1px;
 }
+
+/**************/
+/* Controls  */
+/**************/
+
+
+#buttons {
+	float: left;
+	width: 301px;
+	height: 60px;
+	margin: 20px 0 0 0px;
+	padding: 20px 0 0 80px;
+	border: 2px solid tan;
+	background-color: tan;
+	position: relative;
+}
+
+input[type=button] {
+	background-color: #000;
+	border: 1px solid #111;
+	border-bottom: 1px solid #111;
+	border-radius: 3px;
+	color: #fff;
+	font: "Helvetica", sans-serif;
+	padding: 6px 0 6px 0;
+	position:relative;
+	top:-1px;
+	float: left;
+	margin-right: 20px;
+	width: 40px;
+	height: 40px;
+	display: inline;
+}
+
+input[type=button]:hover {
+    background-color: #000;
+    cursor: pointer; 
+}
+
+input[type=button]:active {
+    border: 1px solid #111;
+    border-bottom: 1px solid #111; 
+}
+
+
+/************/
+/* Layout  */
+/************/
+
 
 .spacer {
 	clear: both;
