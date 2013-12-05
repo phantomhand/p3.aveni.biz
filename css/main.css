@@ -32,24 +32,29 @@ body {
 /****************/
 
 #t-12 {
+	background-color: tan;
 	text-align: center;
 	clear: both; 
 	margin: 0 auto; 
-	width: 700px;
-	/* border: 2px solid red; */
+	width: 385px;
+	border: 65px solid tan;
+	border-radius: 35px;
+	padding-bottom: 20px;
 }	
 
 
 #grid {
 	background-color: black;
 	width: 385px;
-	height: 580px;
+	height: 555px;
 	margin: 25px 0 25px 0;
 	position: relative;
 	text-align: center;
 	clear: both; 
 	margin: 0 auto; 
-	padding-bottom: 10px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	margin-top: -25px
 }
 
 .pad {
@@ -135,16 +140,14 @@ p.game {
 #buttons {
 	float: left;
 	width: 301px;
-	height: 60px;
-	margin: 20px 0 0 0px;
-	padding: 20px 0 0 80px;
-	border: 2px solid tan;
-	background-color: tan;
+	height: 50px;
+	margin: 10px 0 0 0px;
+	padding: 35px 0 0 80px;
 	position: relative;
 }
 
 input[type=button] {
-	background-color: #000;
+	background-color: #1F1400;
 	border: 1px solid #111;
 	border-bottom: 1px solid #111;
 	border-radius: 3px;
