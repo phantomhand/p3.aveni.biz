@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-//=========
-//! Array
-//=========
+//=============================================================================================
+// Array & Variables
+//=============================================================================================
 
 	// Array for looping
 	var song = Array();
@@ -13,8 +13,7 @@ $(document).ready(function() {
 	// Set variable to track position in 'song' array, set it to 0
 	var note = 0;
 	
-	var tempo;
-	
+	var tempo;	
 	
 	/* Play and Loop the Array */
 
@@ -45,50 +44,17 @@ $(document).ready(function() {
 		note++;
 	}
 	
-//===========
-// Buttons
-//===========
+//=============================================================================================
+// Buttons / Event Listeners
+//=============================================================================================
 
-
-	// Event listener for record button	
-	$('#record').click(function(){
-		recording = true;
-		console.log('Recording = ' + recording);
-	});
-	
-	// Event listener for play button	
-	$('#play').click(function(){
-		recording = false;
-		
-		// Start the tempo for playback
-		tempo = setInterval(play_array,600);
-		
-		// Display the 'song' array 
-		console.log(song);
-		
-	});
-	
-	// Event listener for stop button	
-	$('#stop').click(function(){
-		recording = false;
-		
-		clearInterval(tempo);
-		
-		console.log(song);
-		console.log('Stopped. Recording = ' + recording);
-	});
-	
-	// Event listener for reset button	
-	$('#reset').click(function(){
-		song.length = 0;
-		console.log(song);
-	});
-	
-	// Event listener for pad selection audio
+	// Playing pads
 	$('.pad').click(function(){
 		var pressed = (event.target.id)
-			
+		
+		//Get the pad that was pressed and play the sample of the corresponding note
 		document.getElementById(pressed + "-note").play();
+		console.log('You pressed ' + pressed)
 		
 		// Light up the button
 		$(this).css('opacity',1);
@@ -101,8 +67,41 @@ $(document).ready(function() {
 		if (recording == true) {
 			song.push(pressed);
 			console.log('song = ' + song);
-		} 
-				
+		} 				
+	});
+
+	// Record button	
+	$('#record').click(function(){
+		recording = true;
+		console.log('Recording = ' + recording);
+	});
+	
+	// Play button	
+	$('#play').click(function(){
+		recording = false;
+		
+		// Start the tempo for playback
+		tempo = setInterval(play_array,600);
+		
+		// Display the 'song' array 
+		console.log(song);
+		
+	});
+	
+	// Stop button	
+	$('#stop').click(function(){
+		recording = false;
+		
+		clearInterval(tempo);
+		
+		console.log(song);
+		console.log('Stopped. Recording = ' + recording);
+	});
+	
+	// Reset button	
+	$('#reset').click(function(){
+		song.length = 0;
+		console.log(song);
 	});
 	
 });
