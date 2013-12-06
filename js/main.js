@@ -49,7 +49,7 @@ $(document).ready(function() {
 //=============================================================================================
 
 	// Playing pads
-	$('.pad').click(function(){
+	$('.pad').click(function(event){
 		var pressed = (event.target.id)
 		
 		//Get the pad that was pressed and play the sample of the corresponding note
@@ -81,7 +81,7 @@ $(document).ready(function() {
 		recording = false;
 		
 		// Start the tempo for playback
-		tempo = setInterval(play_array,600);
+		tempo = setInterval(play_array,500);
 		
 		// Display the 'song' array 
 		console.log(song);
