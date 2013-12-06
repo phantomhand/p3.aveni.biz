@@ -1,35 +1,81 @@
-/*************/
-/* BASICS  */
-/************/
+/* LAYOUT / BASICS  */
+/****************************/
 
 html {
-	background-color: #eee;
+	background-color: #14b9cc;
 	font-family: Helvetica, sans-serif;
+}
+
+body {
+	margin-bottom: -100px;
 }
 
 #wrap {
 	text-align: center;
 	clear: both; 
 	margin: 0 auto; 
-	width: 700px;
+	width: 800px;
+	position: relative;
+	background: #999;
+	padding-bottom: 50px;
+}
+
+header {
+	height: 175px;
+	width: 800px;
+	margin-top: -75px;
+	background: black;
 }
 
 h1 {
 	font-family: 'Play', sans-serif;
+	margin-left: -9999px;
 	font-weight: 700;
-	font-size: xx-large;
+	font-size: 1.925em;
+	color: white;
 }
 
 body {
 	font-family: 'Play', sans-serif;
 	font-weight: 400;
 	font-size: large;
+	color: white;
+}
+
+#about {
+	padding-bottom: 30px;
+	width: 680px;
+	text-align: left;
+	margin: 0 auto;
+	margin-bottom: -20px;
+	font-size: 1em;
+	color: white;
+}
+
+#about a {
+	text-decoration: none;
+	color: yellow;
+}
+
+.spacer {
+	clear: both;
 }
 
 
-/****************/
+footer {
+	text-align: center;
+	clear: both; 
+	margin: 0 auto; 
+	margin-top: 40px;
+	width: 760px;
+	height: 75px;
+	padding: 20px 20px 0 20px;
+	color: white;
+}
+
+
 /* GAME */
-/****************/
+/****************************/
 
 #t-12 {
 	background-color: tan;
@@ -41,9 +87,9 @@ body {
 	border: 65px solid tan;
 	border-radius: 35px;
 	padding-bottom: 20px;
-	box-shadow: 0 0 20px 2px #999;
-	-moz-box-shadow: 0 0 10px 2px #999;
-	-webkit-box-shadow: 0 0 10px 2px #999;
+	box-shadow: 0px 5px 10px 1px #333;
+	-moz-box-shadow: 0px 5px 10px 1px #333;
+	-webkit-box-shadow: 0px 5px 10px 1px #333;
 }	
 
 
@@ -60,6 +106,9 @@ body {
 	border-radius: 20px;
 	margin-top: -25px
 }
+
+
+/* Pads */
 
 .pad {
 	width: 100px;
@@ -136,10 +185,8 @@ p.game {
 	margin-top: 1px;
 }
 
-/**************/
-/* Controls  */
-/**************/
 
+/* Controls  */
 
 #buttons {
 	float: left;
@@ -178,23 +225,7 @@ input[type=button]:active {
 }
 
 
-/************/
-/* Layout  */
-/************/
 
 
-.spacer {
-	clear: both;
-}
 
-
-footer {
-	text-align: center;
-	clear: both; 
-	margin: 0 auto; 
-	width: 650px;
-	padding: 20px;
-	/* border: 2px solid red;  */
-	position: relative;
-}
 
