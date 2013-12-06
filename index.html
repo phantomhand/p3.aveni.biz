@@ -2,19 +2,39 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Tandy T-12 Computerized Arcade</title>
+		<title>Tandy-12 Computerized Arcade Simulator</title>
 		<link rel="stylesheet" href="css/main.css" type="text/css">	
 		<link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>	
 	</head>
+	
 	<body>
 		<div id="wrap">
+		
 			<header>
-				<h1>Tandy T-12 Computerized Arcade Simulator</h1>
+				<h1>Tandy-12 Computerized Arcade Simulator</h1><a href="index.html"><img src="imgs/tandy-12-simulator-header-logo.png" alt="Header Logo"/></a>
 			</header>
+			
+			<!-- Instructions -->
 			<section id="about">
-				<p>Play in organ mode (1) or songwriter mode (2).</p>
+				<p>This project recreates the ORGAN and SONG WRITER game modes of the 
+				<a href="http://www.computerhistory.org/collections/catalog/102626662" title="Learn more about the T-12 on the Computer History Museum's website">TANDY-12</a>, 
+				a computerized electronic toy sold at Radio Shack stores in the 1980s.</p>
+				
+				<p>To play in ORGAN mode, simply press the colored pads to play a tune.</p> 
+				
+				<p>To activate SONG WRITER mode, press the record button at the bottom of the game. Then, play the pads to write your song.
+				When you are done with your song, press PLAY to hear it played back in a loop. To stop the playback, press STOP. 
+				To clear the song and start again, press RESET.</p>
+				
+				<p>For added enjoyment, try making a song and then playing more notes on top.<br>
+				Then, during playback, try hitting RECORD again to add notes to the loop.</p>
+				
+				<p>Experiment and have fun!</p>
 			</section>
+			
+			<!-- The Game -->
 			<div id="t-12">
+			
 				<section id="grid">
 					<div class="pad" id="p1">1<br>
 						<p class="game">ORGAN</p>
@@ -69,27 +89,30 @@
 					
 						<div id="buttons">
 							<input type='button' id='record' value='REC'>
+							<input type='button' id='play' value='PLAY'>
 							<input type='button' id='stop' value='STOP'>
-							<input type='button' id='play' value='&#9658;'>
 							<input type='button' id='reset' value='RESET'>
 						</div>
 					
-				</section>
+				</section> <!-- End Game -->
 				
+				
+				<!-- Links for Pad Sounds (Sampled from the Actual Game) -->
 				<audio id="p1-note" src="audio/p1.mp3"></audio> <audio id="p2-note" src="audio/p2.mp3"></audio> <audio id="p3-note" src="audio/p3.mp3"></audio>
 				<audio id="p4-note" src="audio/p4.mp3"></audio> <audio id="p5-note" src="audio/p5.mp3"></audio> <audio id="p6-note" src="audio/p6.mp3"></audio>
 				<audio id="p7-note" src="audio/p7.mp3"></audio> <audio id="p8-note" src="audio/p8.mp3"></audio> <audio id="p9-note" src="audio/p9.mp3"></audio>
 				<audio id="p10-note" src="audio/p10.mp3"></audio> <audio id="p11-note" src="audio/p11.mp3"></audio> <audio id="p12-note" src="audio/p12.mp3"></audio>
 			</div>
-		</div>
+			
 		<div class="spacer"></div>
-			<footer>
+		
+		<footer>
 			&copy; 2013 Frank Aveni
-			</footer>
-		<!-- <script src="js/Audiolet.min.js"></script> -->
-		<!-- <script src="js/audiolet_app.js"></script> -->
+		</footer>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script src="js/main.js"></script>
+		</div> <!-- End Wrapper -->
 	</body>
 </html>
