@@ -40,6 +40,9 @@ body {
 	border: 65px solid tan;
 	border-radius: 35px;
 	padding-bottom: 20px;
+	box-shadow: 0 0 20px 2px #999;
+	-moz-box-shadow: 0 0 10px 2px #999;
+	-webkit-box-shadow: 0 0 10px 2px #999;
 }	
 
 
@@ -72,7 +75,7 @@ body {
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	background: url(../imgs/corner-tex.png) no-repeat;
-	opacity: 1;
+	opacity: .85;
 
 }
 
