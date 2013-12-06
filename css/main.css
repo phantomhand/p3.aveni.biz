@@ -57,6 +57,10 @@ body {
 	color: yellow;
 }
 
+.small{
+	font-size: x-small;
+}
+
 .spacer {
 	clear: both;
 }
@@ -223,9 +227,3 @@ input[type=button]:active {
     border: 1px solid #111;
     border-bottom: 1px solid #111; 
 }
-
-
-
-
-
-
