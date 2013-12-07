@@ -57,8 +57,31 @@ body {
 	color: yellow;
 }
 
+.show, .hide{
+	font-size: x-large;
+	font-weight: bold;
+	color: yellow;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+.instructions {
+	font-size: .8em;
+	margin-top: 10px;
+	color: yellow;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
 .small{
-	font-size: x-small;
+	font-size: .7em;
+}
+
+.yellow {
+	color: yellow;
 }
 
 .spacer {
