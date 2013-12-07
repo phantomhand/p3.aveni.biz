@@ -48,15 +48,7 @@ $(document).ready(function() {
 // Buttons / Event Listeners
 //=============================================================================================
 
-	// Instructions
-	//$(".instructions").click(function() {
-	//	$("#instructions").show(200);
-	//});
-	
-	//$(".instructions").click(function() {
-	//	$("#instructions").hide(200);
-	//});
-	
+	// Instructions	
 	$('.instructions').click(function() {
 		$('#instructions').toggleClass('hidden');
 	});
